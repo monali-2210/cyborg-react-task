@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 600;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Appin{
+    max-width: 500px;
+    width: 100%;
+    min-height: 400px;
+    box-shadow: 0 2px 6px #555;
+    margin: 50px auto ;
+    padding: 50px;
+    background-color: rgb(205, 238, 252);
+    margin-top: 30px;
+}
+h1{
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 900;
+   color: #666;
+}
+form{
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+}
+input#todos {
+    width: 300px;
+    border-width: 1px;
+    border-radius: 2px;
+}
+button {
+    float: right;
+    padding: 3px;
+    border-width: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button#submit {
+    background-color: rgb(59, 182, 59);
+    border-color: green;
+    color: beige;
+    width: 70px;
+}
+button#edit {
+    border-color: rgb(255, 102, 0);
+    background-color: rgb(233, 142, 39);
+    color: beige;
+}
+button#delete {
+    border-color: red;
+    background-color: crimson;
+    color: beige;
+}
+ul li{
+    list-style: none;
+    border: 1px solid rgb(14, 13, 13);
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+ul li .active{
+    opacity: 0.3;
+    text-decoration: line-through;
+}
+ul li input,
+.roe input{
+    margin-right: 5px;
+    transform: translateY(1px);
+}
+ul li button:disabled{
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+label{
+    cursor: pointer;
 }

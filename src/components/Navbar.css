@@ -1,0 +1,19 @@
+button.matrix {
+    float: right;
+    margin-right: 60px;
+    margin-top: -44px;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 80px;
+    font-weight: 700;
+}
+.nav {
+    background-color: black;
+    color: white;
+    height: 39px;
+    margin-top: -20px;
+    width: 854px;
+    margin-left: -8px;
+    align-items: center;
+}
